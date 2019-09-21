@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Kerberos Panzer Cop Helmet -->
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>T45_Helmet</defName>
+		<label>Chunkus</label>
+		<description>AAAAA</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+	<graphicData>
+      <texPath>Things/Apparel/Head/T45Helmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+		<WorkToMake>13000</WorkToMake>
+		<MaxHitPoints>150</MaxHitPoints>
+		<Mass>2.4</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.73</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.75</ArmorRating_Heat>
+		<Insulation_Cold>4</Insulation_Cold>
+		<Insulation_Heat>2</Insulation_Heat>
+		<EquipDelay>3.5</EquipDelay>
+		<DeteriorationRate>0.5</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+		<ToxicSensitivity>-0.25</ToxicSensitivity>
+		<SocialImpact>0.20</SocialImpact>
+	</equippedStatOffsets>
+
+    <costList>
+		<Steel>40</Steel>
+		<ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+	
+    <apparel>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Head/T45Helmet</wornGraphicPath>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>IndustrialMilitaryAdvanced</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<thingCategories Inherit="False">
+		<li>Headgear</li>
+	</thingCategories>
+  </ThingDef>
+
+<!-- Kerberos Panzer Cop Armor -->
+  <ThingDef ParentName="ArmorMachineableBase">
+		<defName>T45_Armor</defName>
+		<label>Special Police Armor</label>
+		<description>BBBBBBB</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+	<graphicData>
+      <texPath>Things/Apparel/Body/T45</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+		<WorkToMake>36000</WorkToMake>
+		<MaxHitPoints>300</MaxHitPoints>
+		<Mass>12.5</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.91</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.7</ArmorRating_Heat>
+		<Insulation_Cold>28</Insulation_Cold>
+		<Insulation_Heat>18</Insulation_Heat>
+		<EquipDelay>10</EquipDelay>
+		<DeteriorationRate>0.5</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+		<ToxicSensitivity>-0.75</ToxicSensitivity>
+		<MoveSpeed>-0.15</MoveSpeed>
+	</equippedStatOffsets>
+
+    <costList>
+		<Steel>120</Steel>
+		<ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+	
+    <apparel>
+		<bodyPartGroups>
+			<li>Neck</li>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Waist</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Body/T45</wornGraphicPath>
+		<layers>
+			<li>Shell</li>
+		</layers>
+		<tags>
+			<li>IndustrialMilitaryAdvanced</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+	</apparel>
+	<thingCategories Inherit="False">
+		<li>Apparel</li>
+	</thingCategories>
+  </ThingDef>
+
+</Defs>
